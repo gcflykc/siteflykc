@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personalize | FLYKc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">FLYKc</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produto.html">Produto</a>
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="personalize.html" class="active">Personalize</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section class="personalization">
+    <h1>Crie Sua Fórmula FLYKc</h1>
+    
+    <form id="personalizationForm">
+      <div class="form-section">
+        <h2>1. Seus Objetivos Principais</h2>
+        <div class="options-grid">
+          <label class="option-card">
+            <input type="checkbox" name="goals" value="energy">
+            <div class="option-content">
+              <h3>Energia</h3>
+              <p>Para dias intensos e produtividade</p>
+            </div>
+          </label>
+          
+          <label class="option-card">
+            <input type="checkbox" name="goals" value="focus">
+            <div class="option-content">
+              <h3>Foco</h3>
+              <p>Concentração e clareza mental</p>
+            </div>
+          </label>
+          
+          <label class="option-card">
+            <input type="checkbox" name="goals" value="recovery">
+            <div class="option-content">
+              <h3>Recuperação</h3>
+              <p>Para após treinos e noites mal dormidas</p>
+            </div>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-section">
+        <h2>2. Nível de Intensidade</h2>
+        <div class="intensity-options">
+          <label>
+            <input type="radio" name="intensity" value="light" checked>
+            <span>Leve</span>
+          </label>
+          <label>
+            <input type="radio" name="intensity" value="medium">
+            <span>Médio</span>
+          </label>
+          <label>
+            <input type="radio" name="intensity" value="strong">
+            <span>Forte</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="form-section">
+        <h2>3. Informações Adicionais</h2>
+        <label>
+          Alguma restrição alimentar ou alergia?
+          <input type="text" name="restrictions" placeholder="Ex: Vegano, sem glúten...">
+        </label>
+      </div>
+      
+      <button type="submit" class="btn">Ver Minha Fórmula</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>FLYKc © 2025 - Energia Inteligente</p>
+  </footer>
+
+  <script>
+    document.getElementById('personalizationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Aqui iria a lógica para processar a personalização
+      alert('Fórmula criada com sucesso! Redirecionando para o checkout...');
+      // window.location.href = 'checkout.html';
+    });
+  </script>
+</body>
+</html>

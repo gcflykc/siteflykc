@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato | FLYKc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">FLYKc</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produto.html">Produto</a>
+      <a href="como-funciona.html">Como Funciona</a>
+      <a href="personalize.html">Personalize</a>
+      <a href="contato.html" class="active">Contato</a>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h1>Fale Conosco</h1>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p><strong>Email:</strong> contato@flykc.com.br</p>
+        <p><strong>Telefone:</strong> (11) 98765-4321</p>
+        <p><strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP</p>
+        
+        <div class="social-links">
+          <a href="#" class="social-icon">Instagram</a>
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">WhatsApp</a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Envie Sua Mensagem</h2>
+        <form id="contactForm">
+          <label>
+            Nome:
+            <input type="text" name="name" required>
+          </label>
+          
+          <label>
+            Email:
+            <input type="email" name="email" required>
+          </label>
+          
+          <label>
+            Assunto:
+            <select name="subject">
+              <option value="product">Dúvida sobre produtos</option>
+              <option value="order">Acompanhamento de pedido</option>
+              <option value="partnership">Parcerias</option>
+              <option value="other">Outros</option>
+            </select>
+          </label>
+          
+          <label>
+            Mensagem:
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>FLYKc © 2025 - Energia Inteligente</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
